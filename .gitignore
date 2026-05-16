@@ -1,0 +1,8 @@
+.idea/
+target/
+out/
+*.iml
+data/users.txt
+
+.DS_Store
+*.txt
