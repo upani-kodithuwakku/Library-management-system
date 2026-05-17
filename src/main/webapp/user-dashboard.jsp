@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <title>User Dashboard - SLIIT Library</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/user-dashboard.css">
 </head>
 <body>
 
@@ -35,6 +35,11 @@
 
 <section class="dashboard">
     <h2>Welcome, <%= loggedUser.getFullName() %></h2>
+
+    <div class="dashboard-actions">
+        <p>Use your account to manage borrowing records and profile details.</p>
+        <a href="logout" class="primary-btn">Logout</a>
+    </div>
 
     <div class="profile-card">
         <h3>Your Profile</h3>

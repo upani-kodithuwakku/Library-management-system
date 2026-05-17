@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef6ff, #f4f7fb);
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #003b7a, #0055a5);
+    color: white;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-box {
+    width: 55px;
+    height: 55px;
+    background-color: #f58220;
+    color: white;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.logo-section p {
+    font-size: 14px;
+    color: #dbeafe;
+}
+
+.navbar {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #f58220;
+}
+
+/* Dashboard */
+.dashboard {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.dashboard h2 {
+    color: #003b7a;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.dashboard-actions {
+    background-color: #ffffff;
+    padding: 20px 26px;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0, 47, 108, 0.1);
+    margin-bottom: 24px;
+    max-width: 640px;
+}
+
+.dashboard-actions p {
+    margin-bottom: 14px;
+    color: #4b5563;
+}
+
+.primary-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #f58220;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #d96f16;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+    border-top: 5px solid #f58220;
+    box-shadow: 0 8px 20px rgba(0, 47, 108, 0.12);
+    text-align: left;
+}
+
+.profile-card h3 {
+    color: #003b7a;
+    margin-bottom: 12px;
+}
+
+.profile-card p {
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #003b7a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .logo-section {
+        flex-direction: column;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .dashboard h2 {
+        font-size: 28px;
+    }
+
+    .profile-card {
+        padding: 22px;
+    }
+}
+
